@@ -1,0 +1,29 @@
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<nav>
+    <a href="/new"><i class="fa fa-home" style="font-size: 35px;"></i></a>
+	<a class="brand-logo center" style="font-family:Arial, Helvetica,sans-serif;font-size:35px">
+	<center>
+	Student List
+	</center>
+	</a>
+</nav>
+<div class="content1">
+	<table class="centered" class="bordered" style="font-family:Arial, Helvetica, sans-serif">
+	<thead>
+	<tr>
+	 <th>NAME</th>
+	 <th>ROLL NUMBER</th>
+	</tr>
+	</thead>
+	<tbody>
+	<% @info.each {|i|%>
+	<tr>
+	 <td><%= i.name %></td>
+	 <td><%= i.roll%></td>
+	</tr>
+	<%}%>
+	</tbody>
+	</table>
+</div>

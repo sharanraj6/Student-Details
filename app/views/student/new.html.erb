@@ -1,0 +1,73 @@
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="parallax-demo" style="background-color: #424242">
+    <header>
+        <nav>
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="/new"><i class="fa fa-home" style="font-size: 35px;"></i></a>
+                    <a class="brand-logo" style="font-family:Arial, Helvetica, sans-serif;font-weight: 10">Welcome</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="parallax-container">
+            <div class="parallax">
+                <img src="https://wallpaperscraft.com/image/blocks_rainbow_3d_graphics_background_76559_1920x1080.jpg">
+            </div>
+        </div>
+
+
+        <div class="content">
+            <center>
+                <h5 font-family="Lucida Fax" style="color: white">Enter Details</h5>
+                <form action="/create" type="get">
+                    <div class="input-field col s6">
+                        <label>Name</label>
+                        <input type="text" style="color: white;width:350px;" name="student[name]" required="">
+                    </div>
+                    <br>
+                    <div class="input-field col s6">
+                        <label>Roll Number</label>
+                        <input type="text" style="color: white;width:350px;" name="student[roll]" required="">
+                    </div>
+                    <br>
+                    <!--<input class="waves-effect waves-light btn" type="submit" value="CREATE STUDENT" />-->
+                    <button class="btn waves-effect waves-light" type="submit" name="action">Register
+                        <i class="fa fa-send"></i>
+                    </button>
+                </form>
+                <br>
+                <form action="/show" type="get">
+                    <button class="btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Students List" type="submit" name="action">
+                        <i class="fa fa-list"></i>
+                    </button>
+                </form>
+                <br>
+
+                <h5 font-family="Lucida Fax" style="color: white">Delete Record</h5>
+                <form action="/delete">
+                    <div class="input-field col s6">
+                        <label>RollNo</label>
+                        <input type="text" style="color: white;width:350px;" name="delete" required="">
+                    </div>
+                    <br>
+                    <button class="btn waves-effect waves-light" type="submit" name="action">Delete
+                        <i class="fa fa-delete"></i>
+                </form>
+                
+
+            </center>
+        </div>
+
+
+        <div class="parallax-container">
+            <div class="parallax">
+                <img src="https://wallpaperscraft.com/image/blocks_rainbow_3d_graphics_background_76559_1920x1080.jpg" />
+            </div>
+        </div>
+    </main>
+</body>
